@@ -59,6 +59,7 @@
     <AndroidResource Include="Resources\Layout-large-port\Main.axml" />
     <AndroidResource Include="Resources\Layout-normal-land\Main.axml" />
     <AndroidResource Include="Resources\Layout-normal-port\Main.axml" />
+    <LibraryProjectZip Include="SupportLib\ActionBarSherlock-4.2.0.zip" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\Main.axml" />
