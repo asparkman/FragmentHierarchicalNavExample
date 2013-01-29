@@ -4,12 +4,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <fragment class="FragmentHierarchicalNavigation.FragmentA"
+    <FrameLayout
         android:id="@+id/fragment"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:label="@string/fragment_label" />
-    <fragment class="FragmentHierarchicalNavigation.FragmentB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <FrameLayout
         android:id="@+id/fragment2"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:label="@string/fragment2_label" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 </LinearLayout>

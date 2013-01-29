@@ -1130,13 +1130,16 @@ namespace FragmentHierarchicalNavigation
 			public const int Fragment = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int Main = 2130903064;
+			public const int FragmentB = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int sherlock_spinner_dropdown_item = 2130903065;
+			public const int Main = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int sherlock_spinner_item = 2130903066;
+			public const int sherlock_spinner_dropdown_item = 2130903066;
+			
+			// aapt resource value: 0x7f03001b
+			public const int sherlock_spinner_item = 2130903067;
 			
 			private Layout()
 			{
@@ -1151,6 +1154,9 @@ namespace FragmentHierarchicalNavigation
 			
 			// aapt resource value: 0x7f09000f
 			public const int Hello = 2131296271;
+			
+			// aapt resource value: 0x7f090015
+			public const int Label = 2131296277;
 			
 			// aapt resource value: 0x7f090000
 			public const int abs__action_bar_home_description = 2131296256;

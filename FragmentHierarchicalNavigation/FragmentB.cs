@@ -20,11 +20,13 @@ namespace FragmentHierarchicalNavigation
         public FragmentB()
         {
             this.Value = 0;
+            this.Layout = Resource.Layout.FragmentB;
         }
 
         public FragmentB(int value)
         {
             this.Value = value;
+            this.Layout = Resource.Layout.FragmentB;
         }
 
         public override string GetOutput()
@@ -40,12 +42,6 @@ namespace FragmentHierarchicalNavigation
         {
             this.AppLog("Begin FragmentB OnCreateView");
             var createdView = base.OnCreateView(p0, p1, p2);
-
-            var viewDetailsBtn = createdView.FindViewById<Button>(Resource.Id.view_details_button);
-            var goDeeperBtn = createdView.FindViewById<Button>(Resource.Id.go_deeper_button);
-
-            viewDetailsBtn.Visibility = ViewStates.Gone;
-            goDeeperBtn.Visibility = ViewStates.Gone;
 
             this.AppLog("End FragmentB OnCreateView");
             return createdView;

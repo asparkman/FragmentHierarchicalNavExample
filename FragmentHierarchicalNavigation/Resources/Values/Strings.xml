@@ -6,4 +6,5 @@
     <string name="fragment2_label">Second Fragment</string>
     <string name="go_deeper_button">Go Deeper</string>
     <string name="view_details_button">View Details</string>
+    <string name="Label">FragmentNavEx</string>
 </resources>

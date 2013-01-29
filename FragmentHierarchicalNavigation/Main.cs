@@ -14,9 +14,11 @@ using Android.Text;
 using Android.Util;
 namespace FragmentHierarchicalNavigation
 {
-    [Activity(Label = "FragmentHierarchicalNavigation", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.Sherlock")]
+    [Activity(Label = "@string/Label", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.Sherlock")]
     public class Main : SherlockFragmentActivity
     {
+        public FragmentTransaction Transaction;
+
         public void AppLog(string message)
         {
             System.Diagnostics.StackTrace t = new System.Diagnostics.StackTrace();
@@ -24,7 +26,7 @@ namespace FragmentHierarchicalNavigation
             outputMessage += string.Format("class:{0}\n", this.GetType().ToString());
             outputMessage += string.Format("message:{0}\n", message);
 
-            Log.Debug("FragmentNavEx", message);
+            Log.Debug("FragmentNavEx", outputMessage);
         }
 
         public override bool OnCreateOptionsMenu(ActionbarSherlock.View.IMenu p0)
@@ -35,11 +37,11 @@ namespace FragmentHierarchicalNavigation
 
         public override bool OnOptionsItemSelected(ActionbarSherlock.View.IMenuItem p0)
         {
-            this.AppLog(string.Format("Begin OnOptionsItemSelected, ItemId = {0}, Icon = {1}", p0.ItemId, (p0.TitleFormatted ?? new SpannedString("null")).ToString()));
+            this.AppLog(string.Format("Begin OnOptionsItemSelected, ItemId = {0}, TitleFormatted = {1}", p0.ItemId, (p0.TitleFormatted ?? new SpannedString("null")).ToString()));
             switch (p0.ItemId)
             {
-                case Resource.Id.homeAsUp:
-                    this.AppLog("OnOptionsItemSelected Resource.Id.homeAsUp");
+                case 16908332:
+                    this.AppLog("OnOptionsItemSelected 16908332");
                     this.SupportFragmentManager.PopBackStack();
                     break;
                 default:
@@ -64,7 +66,7 @@ namespace FragmentHierarchicalNavigation
                 this.AppLog(ex.ToString());
             }
 
-            /*
+            
             this.AppLog("Set Display Home As Up Enabled");
             this.SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 
@@ -79,7 +81,21 @@ namespace FragmentHierarchicalNavigation
 
             this.AppLog("Commit for initial FragmentA transaction.");
             transaction.Commit();
-            */
+
+            if (this.FindViewById<FrameLayout>(Resource.Id.fragment2) != null)
+            {
+                this.AppLog("Beginning initial FragmentB transaction.");
+                transaction = this.SupportFragmentManager.BeginTransaction();
+
+                this.AppLog("Performing replace for initial FragmentB transaction.");
+                transaction.Replace(Resource.Id.fragment2, new FragmentB(0));
+
+                this.AppLog("AddToBackStack for initial FragmentB transaction.");
+                transaction.AddToBackStack(null);
+
+                this.AppLog("Commit for initial FragmentB transaction.");
+                transaction.Commit();
+            }
         }
     }
 }

@@ -20,11 +20,13 @@ namespace FragmentHierarchicalNavigation
         public FragmentA()
         {
             this.Value = 0;
+            this.Layout = Resource.Layout.Fragment;
         }
 
         public FragmentA(int value)
         {
             this.Value = value;
+            this.Layout = Resource.Layout.Fragment;
         }
 
         public override string GetOutput()
@@ -48,10 +50,9 @@ namespace FragmentHierarchicalNavigation
 
 
                 this.AppLog("Begin details view transaction.");
-                var detailsViewTransaction = this.FragmentManager.BeginTransaction();
+                var detailsViewTransaction = GetTransaction();
                 if (this.Activity.FindViewById(Resource.Id.fragment2) == null)
                 {
-
                     this.AppLog("Replace details view transaction.");
                     detailsViewTransaction.Replace(Resource.Id.fragment, new FragmentB(this.Value));
 
@@ -64,7 +65,7 @@ namespace FragmentHierarchicalNavigation
                 else
                 {
                     this.AppLog("Replace details view transaction.");
-                    detailsViewTransaction.Replace(Resource.Id.fragment2, new FragmentB(this.Value + 1));
+                    detailsViewTransaction.Replace(Resource.Id.fragment2, new FragmentB(this.Value));
 
                     this.AppLog("Commit details view transaction.");
                     detailsViewTransaction.Commit();
@@ -78,7 +79,7 @@ namespace FragmentHierarchicalNavigation
                     this.AppLog("goDeeperBtn.Click");
 
                     this.AppLog("Begin go deeper view transaction.");
-                    var goDeeperTransaction = this.FragmentManager.BeginTransaction();
+                    var goDeeperTransaction = GetTransaction();
 
                     this.AppLog("Replace go deeper view transaction.");
                     goDeeperTransaction.Replace(Resource.Id.fragment, new FragmentA(this.Value + 1));
