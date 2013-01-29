@@ -1,0 +1,10 @@
+﻿The application is designed for devices that meet the following qualifiers.
+	1. large-land (large landscape)
+	2. large-port (large non-landscape)
+	3. normal-land (normal landscape)
+	4. normal-port (normal non-landscape)
+The Layout folder does not serve to be a default for the four qualified 
+folders.  The Layout folder should house views and layouts that are common to 
+each.  In this sense, all items in the Layout folder should not be contained in
+the qualified layout folders.  During development it should not be used as a 
+round-about way to bury multiple screen size handling until later.

@@ -1,0 +1,4 @@
+﻿The application was designed for screens that meet the hdpi, mdpi, and xhdpi 
+qualifiers.  The Drawable folder should contain unscaled drawables, but their
+should exist no layout parameters, or interface logic that scales drawables
+taken from that resource folder.

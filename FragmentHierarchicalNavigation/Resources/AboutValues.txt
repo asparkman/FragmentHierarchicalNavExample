@@ -1,0 +1,8 @@
+﻿The application was designed for english and spanish.  English will be 
+considered the default, and thusly all English translations will be placed in
+the Values folder.  The Spanish translation should be placed in the Values-es
+folder.  All English strings should contain an analogous Spanish string.
+
+In addition, the Values folder should contain value files common to all 
+language qualified Values folders.  Those common files should not be contained
+in any of the qualified folders.
