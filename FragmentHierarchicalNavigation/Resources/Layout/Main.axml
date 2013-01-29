@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <fragment class="com.example.android.apis.app.FragmentArguments$MyFragment"
+    <fragment class="FragmentHierarchicalNavigation.FragmentA"
         android:id="@+id/fragment"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:label="@string/fragment_label" />

@@ -4,10 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
+    <fragment class="FragmentHierarchicalNavigation.FragmentA"
+        android:id="@+id/fragment"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:label="@string/fragment_label" />
+    <fragment class="FragmentHierarchicalNavigation.FragmentB"
+        android:id="@+id/fragment2"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:label="@string/fragment2_label" />
 </LinearLayout>

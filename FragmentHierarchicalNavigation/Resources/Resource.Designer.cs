@@ -870,9 +870,6 @@ namespace FragmentHierarchicalNavigation
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040034
-			public const int MyButton = 2130968628;
-			
 			// aapt resource value: 0x7f040022
 			public const int abs__action_bar = 2130968610;
 			
@@ -999,8 +996,14 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f040027
 			public const int edit_query = 2130968615;
 			
-			// aapt resource value: 0x7f040033
-			public const int fragment = 2130968627;
+			// aapt resource value: 0x7f040036
+			public const int fragment = 2130968630;
+			
+			// aapt resource value: 0x7f040037
+			public const int fragment2 = 2130968631;
+			
+			// aapt resource value: 0x7f040035
+			public const int go_deeper_button = 2130968629;
 			
 			// aapt resource value: 0x7f040006
 			public const int homeAsUp = 2130968582;
@@ -1010,6 +1013,9 @@ namespace FragmentHierarchicalNavigation
 			
 			// aapt resource value: 0x7f040001
 			public const int normal = 2130968577;
+			
+			// aapt resource value: 0x7f040033
+			public const int output = 2130968627;
 			
 			// aapt resource value: 0x7f040008
 			public const int showCustom = 2130968584;
@@ -1025,6 +1031,9 @@ namespace FragmentHierarchicalNavigation
 			
 			// aapt resource value: 0x7f040004
 			public const int useLogo = 2130968580;
+			
+			// aapt resource value: 0x7f040034
+			public const int view_details_button = 2130968628;
 			
 			// aapt resource value: 0x7f040000
 			public const int wrap_content = 2130968576;
@@ -1118,13 +1127,16 @@ namespace FragmentHierarchicalNavigation
 			public const int abs__simple_dropdown_hint = 2130903062;
 			
 			// aapt resource value: 0x7f030017
-			public const int Main = 2130903063;
+			public const int Fragment = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int sherlock_spinner_dropdown_item = 2130903064;
+			public const int Main = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int sherlock_spinner_item = 2130903065;
+			public const int sherlock_spinner_dropdown_item = 2130903065;
+			
+			// aapt resource value: 0x7f03001a
+			public const int sherlock_spinner_item = 2130903066;
 			
 			private Layout()
 			{
@@ -1185,8 +1197,17 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f090009
 			public const int abs__shareactionprovider_share_with_application = 2131296265;
 			
+			// aapt resource value: 0x7f090012
+			public const int fragment2_label = 2131296274;
+			
 			// aapt resource value: 0x7f090011
 			public const int fragment_label = 2131296273;
+			
+			// aapt resource value: 0x7f090013
+			public const int go_deeper_button = 2131296275;
+			
+			// aapt resource value: 0x7f090014
+			public const int view_details_button = 2131296276;
 			
 			private String()
 			{
