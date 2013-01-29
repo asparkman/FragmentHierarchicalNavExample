@@ -870,8 +870,8 @@ namespace FragmentHierarchicalNavigation
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040033
-			public const int MyButton = 2130968627;
+			// aapt resource value: 0x7f040034
+			public const int MyButton = 2130968628;
 			
 			// aapt resource value: 0x7f040022
 			public const int abs__action_bar = 2130968610;
@@ -998,6 +998,9 @@ namespace FragmentHierarchicalNavigation
 			
 			// aapt resource value: 0x7f040027
 			public const int edit_query = 2130968615;
+			
+			// aapt resource value: 0x7f040033
+			public const int fragment = 2130968627;
 			
 			// aapt resource value: 0x7f040006
 			public const int homeAsUp = 2130968582;
@@ -1181,6 +1184,9 @@ namespace FragmentHierarchicalNavigation
 			
 			// aapt resource value: 0x7f090009
 			public const int abs__shareactionprovider_share_with_application = 2131296265;
+			
+			// aapt resource value: 0x7f090011
+			public const int fragment_label = 2131296273;
 			
 			private String()
 			{
