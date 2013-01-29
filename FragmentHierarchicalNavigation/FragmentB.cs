@@ -17,6 +17,10 @@ namespace FragmentHierarchicalNavigation
 {
     public class FragmentB : AbstractFragment
     {
+        public FragmentB()
+        {
+            this.Value = 0;
+        }
 
         public FragmentB(int value)
         {

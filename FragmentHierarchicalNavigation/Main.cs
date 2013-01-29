@@ -64,6 +64,7 @@ namespace FragmentHierarchicalNavigation
                 this.AppLog(ex.ToString());
             }
 
+            /*
             this.AppLog("Set Display Home As Up Enabled");
             this.SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 
@@ -78,6 +79,7 @@ namespace FragmentHierarchicalNavigation
 
             this.AppLog("Commit for initial FragmentA transaction.");
             transaction.Commit();
+            */
         }
     }
 }
