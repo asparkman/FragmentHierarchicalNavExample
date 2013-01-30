@@ -32,8 +32,21 @@ namespace FragmentHierarchicalNavigation
 
             this.SupportMenuInflater.Inflate(Resource.Menu.action_bar, p0);
 
-            this.SupportActionBar.SetHomeButtonEnabled(true);
-
+            this.SupportFragmentManager.BackStackChanged += 
+                (o, e) 
+                    =>
+                {
+                    if (this.SupportFragmentManager.BackStackEntryCount > 1)
+                    {
+                        this.SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+                        this.SupportActionBar.SetHomeButtonEnabled(true);
+                    }
+                    else
+                    {
+                        this.SupportActionBar.SetDisplayHomeAsUpEnabled(false);
+                        this.SupportActionBar.SetHomeButtonEnabled(false);
+                    }
+                };
             return true;
         }
 
@@ -70,7 +83,6 @@ namespace FragmentHierarchicalNavigation
 
             
             this.AppLog("Set Display Home As Up Enabled");
-            this.SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 
             this.AppLog("Beginning initial FragmentA transaction.");
             var transaction = this.SupportFragmentManager.BeginTransaction();
