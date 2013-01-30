@@ -993,6 +993,9 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f04000b
 			public const int abs__up = 2130968587;
 			
+			// aapt resource value: 0x7f040036
+			public const int details_view_group = 2130968630;
+			
 			// aapt resource value: 0x7f040009
 			public const int disableHome = 2130968585;
 			
@@ -1005,11 +1008,17 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f040035
 			public const int fragment2 = 2130968629;
 			
+			// aapt resource value: 0x7f040039
+			public const int go_deeper_action_bar_item = 2130968633;
+			
 			// aapt resource value: 0x7f040006
 			public const int homeAsUp = 2130968582;
 			
 			// aapt resource value: 0x7f040002
 			public const int listMode = 2130968578;
+			
+			// aapt resource value: 0x7f040037
+			public const int next_value_action_bar_item = 2130968631;
 			
 			// aapt resource value: 0x7f040001
 			public const int normal = 2130968577;
@@ -1026,11 +1035,17 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f040007
 			public const int showTitle = 2130968583;
 			
+			// aapt resource value: 0x7f040038
+			public const int summary_view_group = 2130968632;
+			
 			// aapt resource value: 0x7f040003
 			public const int tabMode = 2130968579;
 			
 			// aapt resource value: 0x7f040004
 			public const int useLogo = 2130968580;
+			
+			// aapt resource value: 0x7f04003a
+			public const int view_details_action_bar_item = 2130968634;
 			
 			// aapt resource value: 0x7f040000
 			public const int wrap_content = 2130968576;
@@ -1139,6 +1154,17 @@ namespace FragmentHierarchicalNavigation
 			public const int sherlock_spinner_item = 2130903067;
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0b0000
+			public const int action_bar = 2131427328;
+			
+			private Menu()
 			{
 			}
 		}

@@ -41,24 +41,19 @@ namespace FragmentHierarchicalNavigation
 
             this.AppLog("Begin OnPrepareOptionsMenu()");
 
-            var nextValue = p0.Add(Resource.String.next_value_action_bar_label);
-            nextValue.SetIntent(new Intent(this.GetMenuActionId(Resource.String.next_value_action_bar_label)));
-            nextValue.SetIcon(Resource.Drawable.ic_action_send);
-            nextValue.SetShowAsAction(ActionbarSherlock.View.MenuItem.ShowAsActionAlways);
+            p0.SetGroupVisible(Resource.Id.details_view_group, true);
         }
 
         public override bool OnOptionsItemSelected(ActionbarSherlock.View.IMenuItem p0)
         {
-            if (p0.Intent == null)
-                return false;
-
-            if (this.GetMenuActionId(Resource.String.next_value_action_bar_label).Equals(p0.Intent.Action))
+            switch (p0.ItemId)
             {
-                this._OutputView.Text = GetOutput();
-
-                return true;
+                case Resource.Id.next_value_action_bar_item:
+                    this._OutputView.Text = GetOutput();
+                    return true;
+                default:
+                    return false;
             }
-            return false;
         }
 
         public override string GetOutput()

@@ -29,7 +29,12 @@ namespace FragmentHierarchicalNavigation
         public override bool OnCreateOptionsMenu(ActionbarSherlock.View.IMenu p0)
         {
             this.AppLog("Begin OnCreateOptionsMenu");
-            return base.OnCreateOptionsMenu(p0);
+
+            this.SupportMenuInflater.Inflate(Resource.Menu.action_bar, p0);
+
+            this.SupportActionBar.SetHomeButtonEnabled(true);
+
+            return true;
         }
 
         public override bool OnOptionsItemSelected(ActionbarSherlock.View.IMenuItem p0)

@@ -36,36 +36,22 @@ namespace FragmentHierarchicalNavigation
             base.OnPrepareOptionsMenu(p0);
 
             this.AppLog("Begin OnPrepareOptionsMenu()");
-
-            var goDeeper = p0.Add(Resource.String.go_deeper_action_bar_label);
-            goDeeper.SetIntent(new Intent(this.GetMenuActionId(Resource.String.go_deeper_action_bar_label)));
-            goDeeper.SetIcon(Resource.Drawable.ic_action_inc_seed);
-            goDeeper.SetShowAsAction(ActionbarSherlock.View.MenuItem.ShowAsActionAlways);
-
-            var viewDetails = p0.Add(Resource.String.view_details_action_bar_label);
-            viewDetails.SetIntent(new Intent(this.GetMenuActionId(Resource.String.view_details_action_bar_label)));
-            viewDetails.SetIcon(Resource.Drawable.ic_action_search);
-            viewDetails.SetShowAsAction(ActionbarSherlock.View.MenuItem.ShowAsActionAlways);
+            p0.SetGroupVisible(Resource.Id.summary_view_group, true);
         }
 
         public override bool OnOptionsItemSelected(ActionbarSherlock.View.IMenuItem p0)
         {
-            if (p0.Intent == null)
-                return false;
-
-            if (this.GetMenuActionId(Resource.String.go_deeper_action_bar_label).Equals(p0.Intent.Action))
+            switch(p0.ItemId)
             {
-                OnGoDeeperButtonClick();
-
-                return true;
+                case Resource.Id.go_deeper_action_bar_item:
+                    OnGoDeeperButtonClick();
+                    return true;
+                case Resource.Id.view_details_action_bar_item:
+                    OnViewDetailsButtonClick();
+                    return true;
+                default:
+                    return false;
             }
-            else if (this.GetMenuActionId(Resource.String.view_details_action_bar_label).Equals(p0.Intent.Action))
-            {
-                OnViewDetailsButtonClick();
-
-                return true;
-            }
-            return false;
         }
 
         public void OnGoDeeperButtonClick()

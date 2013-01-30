@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/details_view_group" android:visible="false">
+        <item android:id="@+id/next_value_action_bar_item"
+                android:title="@string/next_value_action_bar_label"
+                android:icon="@drawable/ic_action_send"
+                android:showAsAction="always" />
+    </group>
+    <group android:id="@+id/summary_view_group" android:visible="false">
+        <item android:id="@+id/go_deeper_action_bar_item"
+                android:title="go_deeper_action_bar_label"
+                android:icon="@drawable/ic_action_inc_seed"
+                android:showAsAction="always" />
+        <item android:id="@+id/view_details_action_bar_item"
+                android:title="@string/view_details_action_bar_label"
+                android:icon="@drawable/ic_action_search"
+                android:showAsAction="always" />
+    </group>
+</menu>
