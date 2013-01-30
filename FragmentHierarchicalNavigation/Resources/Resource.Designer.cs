@@ -812,55 +812,58 @@ namespace FragmentHierarchicalNavigation
 			public const int ic_action_edit = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_action_locate = 2130837622;
+			public const int ic_action_inc_seed = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_action_mail = 2130837623;
+			public const int ic_action_locate = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_action_mail_add = 2130837624;
+			public const int ic_action_mail = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_action_microphone = 2130837625;
+			public const int ic_action_mail_add = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_action_overflow = 2130837626;
+			public const int ic_action_microphone = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_action_paste = 2130837627;
+			public const int ic_action_overflow = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_action_photo = 2130837628;
+			public const int ic_action_paste = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_action_refresh = 2130837629;
+			public const int ic_action_photo = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_action_search = 2130837630;
+			public const int ic_action_refresh = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_action_select_all = 2130837631;
+			public const int ic_action_search = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_action_send = 2130837632;
+			public const int ic_action_select_all = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_action_share = 2130837633;
+			public const int ic_action_send = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_action_star = 2130837634;
+			public const int ic_action_share = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_action_user = 2130837635;
+			public const int ic_action_star = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_action_user_add = 2130837636;
+			public const int ic_action_user = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_action_video = 2130837637;
+			public const int ic_action_user_add = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int Icon = 2130837638;
+			public const int ic_action_video = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int Icon = 2130837639;
 			
 			private Drawable()
 			{
@@ -996,14 +999,11 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f040027
 			public const int edit_query = 2130968615;
 			
-			// aapt resource value: 0x7f040036
-			public const int fragment = 2130968630;
-			
-			// aapt resource value: 0x7f040037
-			public const int fragment2 = 2130968631;
+			// aapt resource value: 0x7f040034
+			public const int fragment = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int go_deeper_button = 2130968629;
+			public const int fragment2 = 2130968629;
 			
 			// aapt resource value: 0x7f040006
 			public const int homeAsUp = 2130968582;
@@ -1031,9 +1031,6 @@ namespace FragmentHierarchicalNavigation
 			
 			// aapt resource value: 0x7f040004
 			public const int useLogo = 2130968580;
-			
-			// aapt resource value: 0x7f040034
-			public const int view_details_button = 2130968628;
 			
 			// aapt resource value: 0x7f040000
 			public const int wrap_content = 2130968576;
@@ -1209,8 +1206,17 @@ namespace FragmentHierarchicalNavigation
 			// aapt resource value: 0x7f090011
 			public const int fragment_label = 2131296273;
 			
+			// aapt resource value: 0x7f090016
+			public const int go_deeper_action_bar_label = 2131296278;
+			
 			// aapt resource value: 0x7f090013
 			public const int go_deeper_button = 2131296275;
+			
+			// aapt resource value: 0x7f090018
+			public const int next_value_action_bar_label = 2131296280;
+			
+			// aapt resource value: 0x7f090017
+			public const int view_details_action_bar_label = 2131296279;
 			
 			// aapt resource value: 0x7f090014
 			public const int view_details_button = 2131296276;

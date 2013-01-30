@@ -19,6 +19,7 @@ namespace FragmentHierarchicalNavigation
     {
         public int Value;
         public int Layout;
+        protected TextView _OutputView;
 
         public abstract string GetOutput();
 
@@ -28,21 +29,23 @@ namespace FragmentHierarchicalNavigation
 
             var createdView = p0.Inflate(Layout, p1, false);
 
-            var outputView = createdView.FindViewById<TextView>(Resource.Id.output);
+            _OutputView = createdView.FindViewById<TextView>(Resource.Id.output);
 
-            outputView.Text = GetOutput();
+            _OutputView.Text = GetOutput();
 
             return createdView;
         }
 
         public void AppLog(string message)
         {
-            System.Diagnostics.StackTrace t = new System.Diagnostics.StackTrace();
-            var outputMessage = string.Format("caller:{0}\n", t.GetFrames()[1]);
-            outputMessage += string.Format("class:{0}\n", this.GetType().ToString());
-            outputMessage += string.Format("message:{0}\n", message);
+            var outputMessage = string.Format("class:{0} <<< message:{1}", this.GetType().ToString(), message);
 
             Log.Debug("FragmentNavEx", outputMessage);
+        }
+
+        public String GetMenuActionId(int label)
+        {
+            return this.GetType().ToString() + ":" + label.ToString();
         }
 
         public FragmentTransaction GetTransaction()

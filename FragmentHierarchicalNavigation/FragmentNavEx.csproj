@@ -363,6 +363,10 @@
     <Folder Include="Resources\Values-es\" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\ic_action_inc_seed.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_inc_seed.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_inc_seed.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_inc_seed.png" />
     <TransformFile Include="Properties\AndroidManifest.xml" />
     <Content Include="Resources\AboutDrawables.txt" />
     <Content Include="Resources\AboutLayouts.txt" />
